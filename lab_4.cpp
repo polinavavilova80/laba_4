@@ -57,6 +57,21 @@ public:
         return result;
     }
 };
+// Функция для тестирования
+void testFunctions() {
+    // Тестирование функции поиска второго максимума
+    int arr[] = { 3, 7, 1, 9, 5 };
+    int idx = findSecondMax(arr, 5);
+    std::cout << "Index of second maximum: " << idx << std::endl;
+
+    // Тестирование класса Matrix
+    Matrix<float, 3, 3> mat;
+
+    // Тестирование класса Vector
+    Vector<int, 3> vec1, vec2;
+    Vector<int, 3> vecResult = vec1.vectorProduct(vec2);
+    int scalarResult = vec1.scalarProduct(vec2);
+}
 
 int main() {
     testFunctions();
